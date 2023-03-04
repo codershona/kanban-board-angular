@@ -7,7 +7,12 @@
 ```
  ng new kanban-board-angular --style=scss --routing=true
 ```
-* 
+* Install Bulma,
+
+```
+  npm install bulma --save
+```
+
 ## Default Setup:
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
