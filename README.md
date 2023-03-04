@@ -1,4 +1,14 @@
-# KanbanBoardAngular
+# Kanban Board Angular
+
+### My Setup and Working process: 
+
+* To create project run this,
+
+```
+ ng new kanban-board-angular --style=scss --routing=true
+```
+
+## Default Setup:
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
 
