@@ -21,23 +21,8 @@
             Column Name: Ideas
           </div>
           <div class="tasks-container" cdkDropList [cdkDropListData]="todo" (cdkDropListDropped)="drop($event)">
-            <div class="task" cdkDrag>
-              Items I have ideas!
-            </div>
-          </div>
-          <div class="tasks-container">
-            <div class="task" cdkDrag>
-              Items I have ideas 1!
-            </div>
-          </div>
-          <div class="tasks-container">
-            <div class="task" cdkDrag>
-              Items I have ideas 2!
-            </div>
-          </div>
-          <div class="tasks-container">
-            <div class="task" cdkDrag>
-              Items I have ideas 3!
+            <div class="task" *ngFor="let item of todo" cdkDrag>
+              {{ item }}
             </div>
           </div>
           </div>
@@ -46,9 +31,9 @@
           <div class="column-title">
             Column Name: Research
           </div>
-          <div class="tasks-container">
-            <div class="task" cdkDrag>
-              Items I have research!
+          <div class="tasks-container" cdkDropList [cdkDropListData]="done" (cdkDropListDropped)="drop($event)">
+            <div class="task" *ngFor="let item of done" cdkDrag>
+              {{ item }}
             </div>
           </div>
         </div>
