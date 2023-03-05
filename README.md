@@ -13,6 +13,15 @@
   npm install bulma --save
 ```
 
+* Model = Data
+* View = HTML
+* Controller = Typescript Class
+#### Angular Modules problems:
+
+* Duplicates Modules
+* Circular Dependency
+* Harder to manage overall.
+
 ## Default Setup:
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
