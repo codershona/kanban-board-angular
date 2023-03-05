@@ -1,5 +1,12 @@
 # Kanban Board Angular
 
+<p align="center">
+	
+<img src="https://user-images.githubusercontent.com/57604500/222979597-2e3fa267-07df-49fb-a55a-c58dda48aab1.png" width=1056 height=550>
+<br />
+<h3 align="center">Burger Builder App</h3>
+</p>
+
 ### My Setup and Working process: 
 
 * To create project run this,
