@@ -1,0 +1,82 @@
+<div class="root">
+  <div class="navbar has-background-dark">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <h1 class="app-name has-gradient-text">Kanban Board</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="board">
+
+    <div class="board-bar">
+      <p class="board-name">Board Name</p>
+    </div>
+
+    <div class="board-wrapper">
+      <div class="board-columns" cdkDropListGroup>
+        <!-- <div class="board-column" cdkDropList [cdkDropListData]="todo" (cdkDropListDropped)="drop($event)"> -->
+          <div class="board-column" *ngFor="let column of board.columns">
+          <div class="column-title">
+            {{ column.name }}
+          </div>
+          <div class="tasks-container" cdkDropList [cdkDropListData]="column.tasks" (cdkDropListDropped)="drop($event)">
+            <div class="task" *ngFor="let item of column.tasks" cdkDrag>
+              {{ item }}
+            </div>
+          </div>
+          </div>
+
+        <!-- <div class="board-column" *ngFor="let column of board.columns">
+          <div class="column-title">
+            {{ column.name }}
+          </div>
+          <div class="tasks-container" cdkDropList [cdkDropListData]="column.tasks" (cdkDropListDropped)="drop($event)">
+            <div class="task" *ngFor="let item of column.tasks" cdkDrag>
+              {{ item }}
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="board-column">
+          <div class="column-title">
+            Column Name: Todo's
+          </div>
+          <div class="tasks-container">
+            <div class="task" cdkDrag>
+              Items I have todo's!
+            </div>
+          </div>
+        </div>
+        <div class="board-column">
+          <div class="column-title">
+            Column Name: Completed
+          </div>
+          <div class="tasks-container">
+            <div class="task" cdkDrag>
+              Items I have done!
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="board-column">
+          <div class="column-title">
+            Column Name: Assigned
+          </div>
+        </div>
+        <div class="board-column">
+          <div class="column-title">
+            Column Name: Unassigned
+          </div>
+        </div>
+        <div class="board-column">
+          <div class="column-title">
+            Column Name: Pending
+          </div>
+        </div>
+        <div class="board-column">
+          <div class="column-title">
+            Column Name: Merged
+          </div>
+        </div> -->
+      </div>
+    </div>

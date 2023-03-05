@@ -1,11 +1,49 @@
 # Kanban Board Angular
 
+<p align="center">
+	
+<img src="https://user-images.githubusercontent.com/57604500/222979597-2e3fa267-07df-49fb-a55a-c58dda48aab1.png" width=1056 height=550>
+<br />
+<h3 align="center">Burger Builder App</h3>
+</p>
+
 ### My Setup and Working process: 
 
 * To create project run this,
 
 ```
  ng new kanban-board-angular --style=scss --routing=true
+```
+* Install Bulma,
+
+```
+  npm install bulma --save
+```
+
+* Model = Data
+* View = HTML
+* Controller = Typescript Class
+#### Angular Modules problems:
+
+* Duplicates Modules
+* Circular Dependency
+* Harder to manage overall.
+
+* To create components, run this,
+
+```
+  ng g c pages/MainView
+```
+
+* To add Angular CDK Materials,
+```
+   ng add @angular/material
+
+```
+
+```
+   npm install @angular/cdk --save
+
 ```
 
 ## Default Setup:
