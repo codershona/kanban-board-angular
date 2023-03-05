@@ -28,6 +28,17 @@
   ng g c pages/MainView
 ```
 
+* To add Angular CDK Materials,
+```
+   ng add @angular/material
+
+```
+
+```
+   npm install @angular/cdk --save
+
+```
+
 ## Default Setup:
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
